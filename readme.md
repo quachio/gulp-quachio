@@ -33,4 +33,4 @@ Precompiled JS and SCSS files are in the src folder and compile to public.  All 
 
 
 ## To Do
-- add image compression
+- look into webpack for better speed.
