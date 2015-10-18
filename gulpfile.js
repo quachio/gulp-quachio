@@ -38,7 +38,6 @@ b.on('log', gutil.log); // output build logs to terminal
 function bundle() {
   return b.bundle()
     // log errors if they happen
-    // .on('error', gutil.log.bind(gutil, 'Browserify Error'))
     .on('error', gutil.log.bind(gutil, gutil.colors.red(
        '\n\n*********************************** \n' +
       'BROWSERIFY ERROR:' +
