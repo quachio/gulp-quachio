@@ -33,8 +33,4 @@ Precompiled JS and SCSS files are in the src folder and compile to public.  All 
 
 
 ## To Do
-- add sass /susy / breakpoint
-	- sass = require('gulp-sass'),
-	- sourcemaps = require('gulp-sourcemaps'),
-	- autoprefixer = require('gulp-autoprefixer'),
 - add image compression
