@@ -1,0 +1,34 @@
+// ***********************************
+// NOTIFICATIONS
+// ***********************************
+
+.panel{
+	padding: 5px 40px;
+	margin: 20px;
+	background: $panel;
+}
+
+.panel.message{
+	background: $panel-message;
+	color: $white;
+	// border: 1px solid darken( $panel-message, 10% );
+}
+
+.panel.success{
+	background: $panel-success;
+	color: $white;
+	// border: 1px solid darken( $panel-success, 10% );
+}
+
+.panel.warning{
+	background: $panel-warning;
+	color: $white;
+	// border: 1px solid darken( $panel-warning, 10% );
+}
+
+.panel.alert{
+	background: $panel-alert;
+	color: $white;
+	// border: 1px solid darken( $panel-alert, 10% );
+}
+

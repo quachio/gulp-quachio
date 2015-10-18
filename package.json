@@ -1,0 +1,28 @@
+{
+  "name": "superCell",
+  "version": "1.0.0",
+  "description": "Build system for node, express and react apps",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Joel Longie",
+  "license": "ISC",
+  "devDependencies": {
+    "babelify": "^6.3.0",
+    "browser-sync": "^2.9.11",
+    "browserify": "^11.2.0",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-sass": "^2.0.4",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^1.4.2",
+    "gulp-util": "^3.0.6",
+    "lodash.assign": "^3.2.0",
+    "react": "^0.14.0",
+    "react-dom": "^0.14.0",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0",
+    "watchify": "^3.4.0"
+  }
+}
