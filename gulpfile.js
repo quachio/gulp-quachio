@@ -38,7 +38,12 @@ b.on('log', gutil.log); // output build logs to terminal
 function bundle() {
   return b.bundle()
     // log errors if they happen
-    .on('error', gutil.log.bind(gutil, 'Browserify Error'))
+    // .on('error', gutil.log.bind(gutil, 'Browserify Error'))
+    .on('error', gutil.log.bind(gutil, gutil.colors.red(
+       '\n\n*********************************** \n' +
+      'BROWSERIFY ERROR:' +
+      '\n*********************************** \n\n'
+      )))
     .pipe(source('bundle.js'))
     // optional, remove if you don't need to buffer file contents
     .pipe(buffer())
@@ -86,7 +91,11 @@ gulp.task('styles', function() {
     .pipe(sourcemaps.init())
       .pipe(sass({outputStyle: 'compressed'}))
       // .on('error', errorlog)
-      .on('error', gutil.log.bind(gutil, 'SASS Error'))
+      .on('error', gutil.log.bind(gutil, gutil.colors.red(
+         '\n\n*********************************** \n' +
+        'SASS ERROR:' +
+        '\n*********************************** \n\n'
+        )))
       .pipe(autoprefixer({
               browsers: ['last 3 versions'],
               cascade: false
