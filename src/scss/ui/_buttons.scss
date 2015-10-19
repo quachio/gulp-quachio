@@ -85,13 +85,25 @@ ul.button-group{
 
 .success{
     background: $success;
+    &:hover{
+        background: darken( $success, 15% );
+    }
 }
 .info{
     background: $info;
+     &:hover{
+        background: darken( $info, 15% );
+    }
 }
 .warning{
     background: $warning;
+     &:hover{
+        background: darken( $warning, 15% );
+    }
 }
 .danger{
     background: $danger;
+     &:hover{
+        background: darken( $danger, 15% );
+    }
 }

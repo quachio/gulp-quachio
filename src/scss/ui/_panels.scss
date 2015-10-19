@@ -1,48 +1,25 @@
 // ***********************************
-// NOTIFICATIONS
+// PANELS
 // ***********************************
 
 .panel{
-	padding: 5px 40px;
+	padding: 20px 40px;
 	margin: 20px;
-	background: $panel;
+	background: $grey-light;
 }
-
-.panel.message{
-	background: $panel-message;
+.panel.success, .panel.info, .panel.warning, .panel.danger{
 	color: $white;
-	// border: 1px solid darken( $panel-message, 10% );
 }
 
 .panel.success{
-	background: $panel-success;
-	color: $white;
-	// border: 1px solid darken( $panel-success, 10% );
+    background: $success;
 }
-
+.panel.info{
+    background: $info;
+}
 .panel.warning{
-	background: $panel-warning;
-	color: $white;
-	// border: 1px solid darken( $panel-warning, 10% );
+    background: $warning;
 }
-
-.panel.alert{
-	background: $panel-alert;
-	color: $white;
-	// border: 1px solid darken( $panel-alert, 10% );
+.panel.danger{
+    background: $danger;
 }
-
-
-
-// .success{
-//     background: $success;
-// }
-// .info{
-//     background: $info;
-// }
-// .warning{
-//     background: $warning;
-// }
-// .danger{
-//     background: $danger;
-// }
