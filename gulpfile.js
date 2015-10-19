@@ -6,13 +6,13 @@ var buffer        = require('vinyl-buffer');
 var gutil         = require('gulp-util');
 var babelify      = require('babelify');
 var uglify        = require('gulp-uglify');
-var react         = require('react');
-var reactDOM      = require('react-dom');
 var sourcemaps    = require('gulp-sourcemaps');
 var assign        = require('lodash.assign');
 var browserSync   = require('browser-sync');
 var sass          = require('gulp-sass');
 var autoprefixer  = require('gulp-autoprefixer');
+var react         = require('react');
+var reactDOM      = require('react-dom');
 
 
 
