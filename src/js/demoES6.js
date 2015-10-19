@@ -1,7 +1,7 @@
 // ES6 module export example
 
 export function es6Welcome(version) {	
-	let message = `Hello, this is an ES${version} module`;
+	let message = `Hello, this is an <strong>ES${version} module</strong>`;
 	let es6Node = document.querySelector('#output');
 	let newEl = document.createElement("p");
 	newEl.innerHTML = message;
