@@ -6,26 +6,17 @@ img {
 	max-width: 100%; /* Adhere to container width. */
 }
 
-.logo svg{
-	width: 40px;
-}
-
-
 // ***********************************
 // ICONS
-// ***********************************
-
-// import font awesome
-@import url('http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css');
-
-
-
-// ***********************************
-// FONT AWESOME
 // http://fortawesome.github.io/Font-Awesome/icons/
 // ***********************************
- 
+
+@import url('http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css');
+
 .fa-apple{
 	font-size: 30px;
 	padding-right: 5px;
 }
+
+
+ 
