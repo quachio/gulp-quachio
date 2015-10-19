@@ -32,4 +32,4 @@ Precompiled JS and SCSS files are in the src folder and compile to public.  All 
 
 
 ## To Do
-- look into webpack for better speed.
+- Research webpack as alternative for Gulp to improve build speed and optimization.
