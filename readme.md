@@ -8,7 +8,7 @@ Since this is used for my own projects I am currently not accepting pull request
 
 After cloning the project to your computer run the following command in your terminal to install all required node and bower packages.
 
-	sudo npm install && bower install
+	sudo npm install
 	gulp	
 		
 
