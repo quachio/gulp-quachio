@@ -2,6 +2,20 @@
 // MIXINS
 // ***********************************
 
+
+// Layput media queries
+// 
+@mixin desktop {
+  @media (min-width: #{$desktop}) {
+    @content;
+  }
+}
+
+
+
+
+
+
 @mixin transition-all($time:.5s){
 	-webkit-transition: all $time ease-in-out;
 	-moz-transition: all $time ease-in-out;

@@ -13,9 +13,13 @@ body{
 	color: $body-text;
 	margin: 0;
 	padding: 0;
-	background: $grey-light;
+	background: #333;
 	font-weight: $font-weight-body;
 	font-family: $font-family-primary;
+
+    @include desktop {
+        background: $grey-light;;
+    }
 }
 
 hr {
