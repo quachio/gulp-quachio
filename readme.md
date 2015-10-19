@@ -56,7 +56,7 @@ If you would like to remove React from the build just follow the steps below.
 
 3. Change file: src/index.jsx to src/index.js
 
-4. In file src/index: 
+4. In file src/index.js: 
 	
 	Remove all React code.
 
