@@ -36,3 +36,8 @@ bower_components/
 build/
 dist/
 maps/
+
+# Compiled Files #
+######################
+public/css/
+public/js/
