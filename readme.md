@@ -33,3 +33,39 @@ Precompiled JS and SCSS files are in the src folder and compile to public.  All 
 
 ## To Do
 - Research webpack as alternative for Gulp to improve build speed and optimization.
+
+## How to remove React
+
+1. In terminal remove react packages.
+
+		sudo npm uninstall react react-dom --save-dev
+
+2. In gulpfile.js 
+
+	Remove lines:
+ 
+		var react         = require('react');
+		var reactDOM      = require('react-dom');
+
+	Change line:
+	
+		entries: ['./src/js/index.jsx'],
+		to
+		entries: ['./src/js/index.js'],
+
+3. Change file: src/index.jsx to src/index.js
+
+4. In file src/index: 
+	
+	Remove all React code.
+
+		import React from 'react';
+		import ReactDOM from 'react-dom';
+		import HelloWorld from './demoReact.jsx';
+
+		ReactDOM.render(
+		    <HelloWorld phrase="ES6"/>,
+		    document.querySelector('#output')
+		);
+
+6. In folder: src/ remove any jsx files.
