@@ -35,6 +35,7 @@ Precompiled JS and SCSS files are in the src folder and compile to public.  All 
 - Research webpack as alternative for Gulp to improve build speed and optimization.
 
 ## How to remove React
+If you would like to remove React from the build just follow the steps below.
 
 1. In terminal remove react packages.
 
