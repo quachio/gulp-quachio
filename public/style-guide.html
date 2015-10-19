@@ -1,192 +1,89 @@
-<!doctype html>
-<html class="no-js" lang="">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Title</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
-    <link rel="stylesheet" href="css/style.css">
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/style.css">
+	<style>
+		.stylesheet-container{
+			width: 90%;
+			background: #fff;
+			margin: 0 auto;
+			padding: 30px;
+		}
+		.style-info{
+			font-size: 0.83em;
+			text-align: center;
+			padding-bottom: 20px;
+		}
+	</style>
 </head>
 <body>
-
-    <div class="page">
-        <p><strong>NOTE: </strong>By default most styles are turned off.  See style.scss and indivual scss files to turn them on and off.</p>
-        <p><a href="/">home</a></p>
-        <hr>
-        <h1 class="entry-title">Style Guide</h1>
-        <p>A basic style guide to get you started using the most common HTML5 elements</p>
-
-        <h1>Header one</h1>
-        <h2>Header two</h2>
-        <h3>Header three</h3>
-        <h4>Header four</h4>
-        <h5>Header five</h5>
-        <h6>Header six</h6>
-        <hr>
-
-        <h2>Paragraphs</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur <a href="#">I am a link</a>. Assumenda, error, corrupti esse quia animi totam <strong>strong tag</strong> consequatur aspernatur illum voluptatum suscipit minus voluptatem <b>bold tag</b> laboriosam adipisci nemo excepturi facere in laudantium magnam.</p>
-
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <i>italic tag</i> Assumenda, error, corrupti esse quia animi totam consequatur aspernatur illum voluptatum suscipit minus voluptatem <em>emphasis tag</em> laboriosam adipisci nemo excepturi facere in laudantium magnam.</p>
-
-        <p>The paragraph above uses the following tags <br>
-        &#60;a href="#"&#62;link&#60;/a&#62;, &#60;strong&#62;, &#60;b&#62;, &#60;i&#62;, &#60;em&#62;</p>
-        <hr>
-
-        <h2>Blockquotes</h2>
-        <p>Single line blockquote:</p>
-        <blockquote>
-            <p>I'm not insane, my mother had me tested!</p></blockquote>
-            <p>Multi line blockquote with a cite reference:</p>
-        <blockquote>
-            <p>Scissors cuts paper, paper covers rock, rock crushes lizard, lizard poisons Spock, Spock smashes scissors, scissors decapitates lizard, lizard eats paper, paper disproves Spock, Spock vaporizes rock, and as it always has, rock crushes scissors. 
-            <cite>Sheldon Cooper &#8211; Big Bang Theory, 2008</cite>
-            </p>
-        </blockquote>      
-        <hr>
+	<div class="stylesheet-container">
+	
+	<h1>"SuperCell Style Guide"</h1>
+	<div class="style-info"><a href="/">HOME</a></div>
+	<h1>Header one</h1>
+    <h2>Header two</h2>
+    <h3>Header three</h3>
+    <h4>Header four</h4>
+    <h5>Header five</h5>
+    <h6>Header six</h6>
+    <hr>
 
 
-        <h2>Tables</h2>
-        <table>
-            <tbody>
-                <tr>
-                    <th>Cast</th>
-                    <th class="views">Occupation</th>
-                    <th>Character Information</th>
-                </tr>
-                <tr>
-                    <td>Sheldon Cooper</td>
-                    <td>Theoretical Physicist</td>
-                    <td>Genius, falls asleep from the song "Soft Kitty".</td>
-                </tr>
-                <tr>
-                    <td>Leonard Hofstadter</td>
-                    <td>Experimental Physicist</td>
-                    <td>The "Jerry Seinfeld" of the group.</td>
-                </tr>
-                <tr>
-                    <td>Penny</td>
-                    <td>Waitress / Actress</td>
-                    <td>Lives in apartment 4B, super hot!</td>
-                </tr>
-                <tr>
-                    <td>Howard Wolowitz</td>
-                    <td>Just an Aerospace Engineer</td>
-                    <td>Doesn't have his doctorate.</td>
-                </tr>
-                <tr>
-                    <td>Rajesh Ramayan "Raj" Koothrappali</td>
-                    <td>Astrophysicist</td>
-                    <td>Can finally talk to women.</td>
-                </tr>
-            </tbody>
-        </table>
-        <hr>
+   <h2>Body Copy</h2>
+   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores voluptatum illum, ducimus tempore, id dignissimos molestias amet odit atque vero rem recusandae cumque a magnam velit in vitae, facere aperiam?</p>
+   <p>Code example: <code>&lt;section&gt;</code></p>
+   <p><code>&lt;pre&gt;</code> example:</p>
+   <pre>&lt;p&gt;Put your code here&lt;/p&gt;</pre>
+   <hr>
 
 
-        <h2>Definition Lists</h2>
-        <dl>
-            <dt>Definition List Title</dt>
-            <dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, dolores, voluptatem, nesciunt.</dd>
-            <dt>Definition List Title</dt>
-            <dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, dolores, voluptatem, nesciunt.</dd>
-        </dl>
-        <hr>
+	<h2>Table</h2>
+	<div class="style-info">
+		Additional classes (add to <code>&lt;table&gt;</code>) <code>.table-striped</code><br>
+		To make responsive wrap <code>&lt;table&gt;</code> in <code>&lt;div class="table-responsive"&gt;</code>
+	</div>
 
 
-        <h2>Unordered Lists (Nested)</h2>
-        <ul>
-            <li>List item one
-                <ul>
-                    <li>List item one
-                        <ul>
-                            <li>List item one</li>
-                            <li>List item two</li>
-                            <li>List item three</li>
-                            <li>List item four</li>
-                        </ul>
-                    </li>
-                    <li>List item two</li>
-                    <li>List item three</li>
-                    <li>List item four</li>
-                </ul>
-            </li>
-            <li>List item two</li>
-            <li>List item three</li>
-            <li>List item four</li>
-        </ul>
-        <hr>
+	<div class="table-responsive">
+		<table role="grid">
+	      <thead>
+	        <tr>
+	          <th>Table Header</th>
+	          <th>Table Header</th>
+	          <th>Table Header</th>
+	          <th>Table Header</th>
+	        </tr>
+	      </thead>
+	      <tbody>
+	        <tr>
+	          <td>Lorem ipsum</td>
+	          <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, ad</td>
+	          <td>Lorem ipsum</td>
+	          <td>Lorem ipsum</td>
+	        </tr>
+	       	<tr>
+	          <td>Lorem ipsum</td>
+	          <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, ad</td>
+	          <td>Lorem ipsum</td>
+	          <td>Lorem ipsum</td>
+	        </tr>
+	       	<tr>
+	          <td>Lorem ipsum</td>
+	          <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, ad</td>
+	          <td>Lorem ipsum</td>
+	          <td>Lorem ipsum</td>
+	        </tr>
+	      </tbody>
+	    </table>
+    </div>
+    <hr>
 
 
-        <h2>Ordered List (Nested)</h2>
-        <ol>
-            <li>List item one
-                <ol>
-                    <li>List item one
-                    <ol>
-                        <li>List item one</li>
-                        <li>List item two</li>
-                        <li>List item three</li>
-                        <li>List item four</li>
-                    </ol>
-                    </li>
-                    <li>List item two</li>
-                    <li>List item three</li>
-                    <li>List item four</li>
-                </ol>
-            </li>
-            <li>List item two</li>
-            <li>List item three</li>
-            <li>List item four</li>
-        </ol>
-        <hr>
-
-
-        <h2>Additional HTML Tags</h2>
-
-        <p><strong>Address Tag &#60;address&#62;</strong></p>
-        <address>
-        1007 Mountain Drive<br />
-        Gotham City, NY 10032<br />
-        United States
-        </address>
-
-        <p><strong>Abbreviation Tag &#60;abbr&#62;</strong><br>
-        <abbr title="HyperText Markup Language">HTML</abbr> is the best thing since sliced web.</p>
-
-        <p><strong>Code Tag &#60;code&#62;</strong><br>
-        You will learn later on in these tests that <code>word-wrap: break-word;</code> will be your best friend.</p>
-        
-        <p><strong>INS and DEL Tag &#60;ins&#62;  &#60;del&#62;</strong><br>
-        The &#60;ins&#62; element represents an <ins>addition to the document.</ins><br>
-        The &#60;del&#62; element represents a <del>removal from the document.</del></p>
-
-        <p><strong>Preformatted Tag &#60;xxx&#62;</strong><br>
-        This tag styles large blocks of code.</p>
-        <pre>
-.post-title {
-margin: 0 0 5px;
-font-weight: bold;
-font-size: 38px;
-line-height: 1.2;
-}</pre>
-
-        <p><strong>Quote Tag &#60;q&#62;</strong><br>
-        <q>So that means, you're a doctor, you're a doctor, you're a doctor, you're a doctor and &#8230; Howard you know a lot of doctors.</q> &#8211;Penny, Big Bang Theory</p>
-
-        <p><strong>Subscript Tag &#60;sub&#62;</strong><br>
-        Getting our science styling on with H<sub>2</sub>O, which should push the &#8220;2&#8243; down.</p>
-
-        <p><strong>Superscript Tag &#60;sup&#62;</strong><br>
-        Still sticking with science and Isaac Newton&#8217;s E = MC<sup>2</sup>, which should lift the 2 up.</p>
-        <hr>
-
-
-        <h2>Forms</h2>
-              
-        <form id="myform" method="post">
+       <h2>Forms</h2>             
+        <form method="">
 
             <p><label for="text">Text</label><br>
             <input type="text" name="text1" ></p>
@@ -203,9 +100,6 @@ line-height: 1.2;
             <p><label for="email">Email (multible coma seperate)</label><br>
             <input type="email" name="email1"></p>
 
-            <p><label for="numbers">Number (1-5)</label><br>
-            <input type="number" name="number1" min="1" max="5" value="1"></p>
-
             <p><label for="range">Range (1-100 is steps of 10)</label><br>
             <input type="range" name="range1" min="0" max="100" step="10" value="20"></p>
 
@@ -218,9 +112,8 @@ line-height: 1.2;
             <p><label for="text-area">Text Area</label><br>
             <textarea name="textarea1" rows="8" cols="50"></textarea></p>
 
-
-
-
+			<p><label for="numbers">Number (1-5)</label><br>
+            <input type="number" name="number1" min="1" max="5" value="1"></p>
 
             <p><label for="check-box">Check boxes:</label><br>
             <input type="checkbox" name="check1" checked ><span>checkone</span><br>
@@ -270,59 +163,37 @@ line-height: 1.2;
             <input type="hidden" name="userid" value="12345"> <!-- hidden fields use JS to alter values -->
             <input type="hidden" name="statement" value="Cool Moves"> <!-- hidden fields can use JS to alter values -->
         </form>
+		<hr>
+
+
+
+		<h2>Buttons</h2>
+		<a class="button" href="#">Link</a>
+		<button class="button" type="submit">Button</button>
+		<button disabled="disabled">Disabled Button</button>
+		<input class="button" type="button" value="Input">
+		<input class="button" type="submit" value="Submit">
+		<input type="image" class="img-button" src="http://placehold.it/100x40" name="submit1" value="Image Button">
+		<p><a class="button expanded" href="#">.expanded</a></p>
+
+		<a class="button success" href="#">.success</a>
+		<a class="button info" href="#">.info</a>
+		<a class="button warning" href="#">.warning</a>
+		<a class="button danger" href="#">.danger</a>
+
+		<p>Button Group</p>
+		<ul class="button-group">
+		  <li><a href="#" class="button">Button 1</a></li>
+		  <li><a href="#" class="button">Button 2</a></li>
+		  <li><a href="#" class="button">Button 3</a></li>
+		</ul>
+
         <hr>
 
-
-        <h2>Buttons</h2>
-        <p><a href="#" class="button">button</a>&nbsp; &nbsp;   &#60;a href="#" class="button"&#62;</p>
-        <p><button>My Button</button>&nbsp; &nbsp;   &#60;button&#62;</p>
-        <p><input type="submit" name="submit" value="Submit">&nbsp; &nbsp;   &#60;input type="submit"&#62;</p>
-        <p> <button disabled="disabled">Disabled Button</button>&nbsp; &nbsp;   disabled button</p>
-        <p><input type="image" class="img-button" src="http://placehold.it/100x40" name="submit1" value="Image Button">&nbsp; &nbsp;   image button</p>
-        <hr>
-
-
-        <h2>Panels</h2>
-        <div class="panel">
-            <h2>Panel</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, sequi, vel illo nesciunt provident voluptate officia minima distinctio a laborum officiis corporis sapiente autem excepturi quod facere odit ea cumque!</p>
-        </div>
-        <div class="panel message">
-            <h2>Message!</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, ex, pariatur possimus mollitia perferendis consequuntur fugiat repudiandae nihil eos! Minima, maxime aspernatur natus omnis similique deleniti tenetur incidunt saepe repellendus.</p>
-        </div>
-
-        <div class="panel success">
-            <h2>Success!</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, ex, pariatur possimus mollitia perferendis consequuntur fugiat repudiandae nihil eos! Minima, maxime aspernatur natus omnis similique deleniti tenetur incidunt saepe repellendus.</p>
-        </div>
-
-        <div class="panel warning">
-            <h2>Warning!</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, ex, pariatur possimus mollitia perferendis consequuntur fugiat repudiandae nihil eos! Minima, maxime aspernatur natus omnis similique deleniti tenetur incidunt saepe repellendus.</p>
-        </div>
-
-        <div class="panel alert">
-            <h2>Alert!</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, ex, pariatur possimus mollitia perferendis consequuntur fugiat repudiandae nihil eos! Minima, maxime aspernatur natus omnis similique deleniti tenetur incidunt saepe repellendus.</p>
-        </div>
-        <hr>
-
-        <h2>Images</h2>
-        <figure>
-            <a href="#"><img alt="#" src="http://placehold.it/600x200"></a>
-            <figcaption>images 100% width, wrapped in &#60;figure&#62; and using &#60;figcaption&#62; for this caption</figcaption>
-        </figure>
-
-        <h2>Font Icons</h2>
-        
-        <i class="fa fa-apple"></i>&nbsp; &nbsp;<i class="fa fa-android"></i>&nbsp; &nbsp;<i class="fa fa-twitter"></i>
-
-        <br><br>
-       
-    </div> <!-- page -->
-
-
-
+	</div><!--  end container -->
+	
+<br>
+<br>
+<br>
 </body>
 </html>

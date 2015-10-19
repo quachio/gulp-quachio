@@ -49,11 +49,49 @@ input[type=submit][disabled=disabled], button[disabled=disabled], a.disabled, .b
 .img-button{
     border: none;
     padding: 0;
+    vertical-align: bottom;
 }
-
+input.button {
+    padding: 10px !important;
+}
 // colors here
 
 .button, button, input[type="submit"]{
 	background: $button-color;
 	color: #fff !important;
+}
+
+.button.expanded{
+    width: 100%;
+    max-width: 100%;
+}
+
+ul.button-group{
+        padding-left: 0;
+    li{
+        list-style: none;
+        display: table-cell;
+        a{
+            border-left: 1px solid;
+            border-color: rgba(255, 255, 255, 0.5);
+        }
+       
+    }
+}
+
+.button.info, button.info{
+    padding-bottom: 8px;
+}
+
+.success{
+    background: $success;
+}
+.info{
+    background: $info;
+}
+.warning{
+    background: $warning;
+}
+.danger{
+    background: $danger;
 }

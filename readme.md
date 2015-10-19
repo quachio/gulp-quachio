@@ -20,7 +20,7 @@ After cloning the project to your computer run the following command in your ter
 - React Ready!
 - Uglify: minification.
 - BrowserSync.
-- Sass / Suzy / Breakpoint.
+- Sass / flexbox ready (IE10+), layout for everygreen browsers.
 
 ## How to use
 
@@ -29,7 +29,6 @@ Precompiled JS and SCSS files are in the src folder and compile to public.  All 
 ## Other
 
 - **src/.jshintrc:**  This file is a jshint config file for proper ES6+ sublimeText linting.  This file is not required and in the future will be removed.
-- **.bowerrc:** This config file points bower to the where to install "bower_components"
 
 
 ## To Do
