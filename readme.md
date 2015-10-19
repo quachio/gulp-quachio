@@ -16,7 +16,7 @@ After cloning the project to your computer run the following command in your ter
 ## Features
 
 - ES6+ with Babel.  Use all the new niffty ES6+ features and transpile down to ES5.
-- Browserify: React transforms, ES6 modules.
+- Browserify: JSX transforms, ES6 modules.
 - React Ready!
 - Uglify: minification.
 - BrowserSync.
