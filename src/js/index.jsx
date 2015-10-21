@@ -5,7 +5,7 @@ import HelloWorld from './demoReact.jsx';
 
 ReactDOM.render(
     <HelloWorld phrase="ES6"/>,
-    document.querySelector('#output')
+    document.querySelector('#reactApp')
 );
 
 

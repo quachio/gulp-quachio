@@ -2,7 +2,7 @@
 
 export function es6Welcome(version) {	
 	let message = `Hello, this is an <strong>ES${version} module</strong>`;
-	let es6Node = document.querySelector('#output');
+	let es6Node = document.querySelector('#es');
 	let newEl = document.createElement("p");
 	newEl.innerHTML = message;
 	let es6Content = es6Node.appendChild(newEl);

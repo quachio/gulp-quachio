@@ -2,7 +2,7 @@
 
 module.exports = function (version) {
 	var message = 'Hello, this is an <strong>ES' + version + ' module</strong>';
-	var es5Node = document.querySelector('#output');
+	var es5Node = document.querySelector('#es');
 	var newEl = document.createElement("p");
 	newEl.innerHTML = message;
 	var es5Content = es5Node.appendChild(newEl);
