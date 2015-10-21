@@ -1,7 +1,7 @@
 //react
 import React from 'react';
 import ReactDOM from 'react-dom';
-import HelloWorld from './demoReact.jsx';
+import HelloWorld from './components/demoReact.jsx';
 
 ReactDOM.render(
     <HelloWorld phrase="ES6"/>,
