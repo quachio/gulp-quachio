@@ -11,7 +11,7 @@ After cloning the project to your computer run the following command in your ter
 	sudo npm install
 	gulp	
 		
-
+The first time you run gulp the build may take a little longer as it compiles and builds out the "public/css" and "public/js" files.
 
 ## Features
 
