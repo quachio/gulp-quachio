@@ -66,7 +66,7 @@ If you would like to remove React from the build just follow the steps below.
 
 		ReactDOM.render(
 		    <HelloWorld phrase="ES6"/>,
-		    document.querySelector('#output')
+		    document.querySelector('#reactApp')
 		);
 
 6. In folder: src/ remove any jsx files.
