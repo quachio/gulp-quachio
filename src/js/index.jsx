@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom';
 import HelloWorld from './components/demoReact.jsx';
 
 ReactDOM.render(
-    <HelloWorld phrase="ES6"/>,
+    <HelloWorld phrase="React Component!"/>,
     document.querySelector('#reactApp')
 );
 
