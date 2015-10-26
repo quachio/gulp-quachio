@@ -10,7 +10,6 @@ class SvgLogo extends React.Component {
 
 
 class HelloWorld extends React.Component {
-
     render() {
         return (
         	<div className="wrapper">
@@ -22,7 +21,6 @@ class HelloWorld extends React.Component {
 		</div>
         );
     }
-
 }
 
 export default HelloWorld;
