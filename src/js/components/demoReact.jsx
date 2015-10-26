@@ -8,7 +8,7 @@ class SvgLogo extends React.Component {
 	}
 }
 
-class HelloWorld extends React.Component {
+class ReactMessage extends React.Component {
     render() {
         return (
         	<div className="wrapper">
@@ -21,7 +21,7 @@ class HelloWorld extends React.Component {
         );
     }
 }
-export default HelloWorld;
+export default ReactMessage;
 
 
 

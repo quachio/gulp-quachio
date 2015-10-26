@@ -1,10 +1,10 @@
 //react
 import React from 'react';
 import ReactDOM from 'react-dom';
-import HelloWorld from './components/demoReact.jsx';
+import ReactMessage from './components/demoReact.jsx';
 
 ReactDOM.render(
-    <HelloWorld phrase="React Component!"/>,
+    <ReactMessage phrase="React Component!"/>,
     document.querySelector('#reactApp')
 );
 
