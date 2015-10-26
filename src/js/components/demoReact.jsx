@@ -8,7 +8,6 @@ class SvgLogo extends React.Component {
 	}
 }
 
-
 class HelloWorld extends React.Component {
     render() {
         return (
@@ -22,7 +21,6 @@ class HelloWorld extends React.Component {
         );
     }
 }
-
 export default HelloWorld;
 
 
