@@ -5,7 +5,7 @@ module.exports = function (version) {
 	var html = [
 		'<div class="wrapper">',
 			'<div class="card">',
-				'<p>Hello, this is an <strong>ES'+ version + 'module</strong></p>',
+				'<p>Hello, this is an <strong>ES'+ version + ' module</strong></p>',
 			'</div>',
 		'</div>'
 	].join('\n');
