@@ -1,5 +1,6 @@
-// es5 module export example
+/*jshint browserify: true */
 
+// es5 module export example
 module.exports = function (version) {
 
 	var html = [
