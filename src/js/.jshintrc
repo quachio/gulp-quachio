@@ -81,6 +81,10 @@
     "passfail"      : false,    // true: Stop on first error
     "white"         : false,    // true: Check against strict whitespace and indentation rules
 
+      // browserify
+    "browserify"    :true,
+
     // Custom Globals
     "globals"       : {}        // additional predefined global variables
+
 }
