@@ -9,6 +9,12 @@ class SvgLogo extends React.Component {
 }
 
 class ReactMessage extends React.Component {
+
+	// var divStyle = {
+	//   width: 90%,
+	//   margin: 20px auto
+	// };
+
     render() {
         return (
         	<div className="wrapper">

@@ -3,7 +3,7 @@
 export function es6Welcome(version) {
 
 	let html = `
-		<div class="wrapper">
+		<div class="wrapper" style="width: 90%;margin: 20px auto;">
 			<div class="card">
 				<p>Hello, this is an <strong>ES${version} module</strong></p>
 			</div>
