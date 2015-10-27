@@ -10,14 +10,16 @@ class SvgLogo extends React.Component {
 
 class ReactMessage extends React.Component {
 
-	// var divStyle = {
-	//   width: 90%,
-	//   margin: 20px auto
-	// };
+
 
     render() {
+		var style = {
+		  width: '90%',
+		  margin: '20px auto'
+		};
+
         return (
-        	<div className="wrapper">
+        	<div className="wrapper" style={style}>
 			<div className="card">
 				<h1 className="logo">"SuperCell <SvgLogo /> Index Page"</h1> 
 				<p>Hello, this is a <strong>{this.props.phrase}</strong></p>
