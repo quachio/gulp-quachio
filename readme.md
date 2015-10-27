@@ -28,12 +28,11 @@ Precompiled JS and SCSS files are in the src folder and compile to public.  All 
 
 ## Other
 
-- **src/.jshintrc:**  This file is a jshint config file for proper ES6+ sublimeText linting.  This file is not required and in the future will be removed.
+- **src/.uslintrc:**  This file is a eslint config file for proper ES6+ sublimeText linting.  This file is not required and in the future will be removed.
 
 
 ## To Do
 - Research webpack as alternative for Gulp to improve build speed and optimization.
-- ESLint
 - add NODE_ENV environment variable to production for [better React performance](https://facebook.github.io/react/blog/2015/10/07/react-v0.14.html#installation). 
 
 ## How to remove React
