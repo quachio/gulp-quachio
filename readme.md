@@ -28,7 +28,7 @@ Precompiled JS and SCSS files are in the src folder and compile to public.  All 
 
 ## Other
 
-- **src/.uslintrc:**  This file is a eslint config file for proper ES6+ sublimeText linting.  This file is not required and in the future will be removed.
+- **src/.eslintrc:**  This file is a eslint config file for proper ES6+ sublimeText linting.  This file is not required and in the future will be removed.
 
 
 ## To Do
