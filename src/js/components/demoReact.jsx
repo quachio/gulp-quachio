@@ -9,9 +9,6 @@ class SvgLogo extends React.Component {
 }
 
 class ReactMessage extends React.Component {
-
-
-
     render() {
 		var style = {
 		  width: '90%',
