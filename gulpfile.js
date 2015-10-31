@@ -18,6 +18,7 @@ var reactDOM      = require('react-dom');
 
 // ////////////////////////////////////////////////
 // Javascript Browserify, Watchify, Babel, React
+// https://github.com/gulpjs/gulp/blob/master/docs/recipes/fast-browserify-builds-with-watchify.md
 // ////////////////////////////////////////////////
 
 // add custom browserify options here
@@ -50,7 +51,7 @@ function bundle() {
     // optional, remove if you dont want sourcemaps
     .pipe(sourcemaps.init({loadMaps: true})) // loads map from browserify file
     // Add transformation tasks to the pipeline here.
-    .pipe(sourcemaps.write('./')) // writes .map file
+    .pipe(sourcemaps.write('../maps')) // writes .map file
     .pipe(gulp.dest('./public/js'))
     .pipe(browserSync.reload({stream:true}));
 }
