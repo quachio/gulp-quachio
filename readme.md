@@ -50,15 +50,7 @@ If you would like to remove React from the build just follow the steps below.
 		var react         = require('react');
 		var reactDOM      = require('react-dom');
 
-	Change line:
-	
-		entries: ['./src/js/index.jsx'],
-		to
-		entries: ['./src/js/index.js'],
-
-3. Change file: src/index.jsx to src/index.js
-
-4. In file src/index.js: 
+3. In file src/index.js: 
 	
 	Remove all React code.
 
@@ -71,4 +63,4 @@ If you would like to remove React from the build just follow the steps below.
 		    document.querySelector('#reactApp')
 		);
 
-6. In folder: src/ remove any jsx files.
+6. In folder: src/ remove any react components.
