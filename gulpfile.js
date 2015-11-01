@@ -23,7 +23,7 @@ var reactDOM      = require('react-dom');
 
 // add custom browserify options here
 var customOpts = {
-  entries: ['./src/js/index.jsx'],
+  entries: ['./src/js/index.js'],
   debug: true
 };
 var opts = assign({}, watchify.args, customOpts);
