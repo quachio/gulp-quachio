@@ -1,4 +1,4 @@
-# SuperCell 0.0.1
+# SuperCell 0.0.2
 
 SuperCell is my current build system for Node, Moble and ES6+ React apps.  This build system replaces jlGulp and renames the build to reflect that it is no longer tied to any particular technology but will adapt over time as new and better technologies emerge. 
 
