@@ -1,11 +1,11 @@
 //react
 import React from 'react';
 import ReactDOM from 'react-dom';
-import ReactMessage from './components/demoReact.js';
+import ReactMessage from './components/DemoReact';
 
 ReactDOM.render(
     <ReactMessage phrase="React Component!"/>,
-    document.querySelector('#reactApp')
+    document.querySelector('#app')
 );
 
 
