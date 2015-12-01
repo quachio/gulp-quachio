@@ -1,5 +1,12 @@
 # SuperCell 0.0.2
 
+<a href="https://david-dm.org/joellongie/superCell">
+  <img src="https://david-dm.org/joellongie/superCell/status.svg" alt="deps status"/>
+</a>&nbsp;
+<a href="https://david-dm.org/joellongie/superCell#info=devDependencies">
+  <img src="https://david-dm.org/joellongie/superCell/dev-status.svg" alt="dev deps status"/>
+</a>
+
 SuperCell is my current build system for Node, Moble and ES6+ React apps.  This build system replaces jlGulp and renames the build to reflect that it is no longer tied to any particular technology but will adapt over time as new and better technologies emerge. 
 
 Since this is used for my own projects I am currently not accepting public pull requests on this repo.  Other then that please feel free to use it however you like.
