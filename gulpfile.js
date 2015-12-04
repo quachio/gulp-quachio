@@ -30,7 +30,7 @@ var opts = assign({}, watchify.args, customOpts);
 var b = watchify(browserify(opts)); 
 
 // add transformations here
-b.transform(babelify);
+b.transform("babelify", {presets: ["es2015", "react"]});
 
 gulp.task('js', bundle); // so you can run `gulp js` to build the file
 b.on('update', bundle); // on any dep update, runs the bundler
