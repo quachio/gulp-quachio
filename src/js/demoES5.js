@@ -1,5 +1,4 @@
 // es5 module export example
-
 module.exports = function (version) {
 
 	var html = [
