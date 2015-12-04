@@ -1,7 +1,7 @@
 //react
 import React from 'react';
 import ReactDOM from 'react-dom';
-import ReactMessage from './components/DemoReact';
+import ReactMessage from './components/Message';
 
 ReactDOM.render(
     <ReactMessage phrase="React Component!"/>,
