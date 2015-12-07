@@ -24,7 +24,7 @@ button {
     text-transform: capitalize;
 }
 
-.button, button, input[type="submit"], input[type="button"], input[type="reset"]{
+.button, button, button a, input[type="submit"], input[type="button"], input[type="reset"]{
 	background: $button-color;
 	color: #fff !important;
 
