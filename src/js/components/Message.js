@@ -4,26 +4,31 @@ import packageJSON from '../../../package.json';
 class ReactMessage extends React.Component {
     render() {
     	const version = packageJSON.version;   	
-		const headerStyle = {
-		  width: '90%',
-		  margin: '20px auto',
-
+		const style = {
+			card: {
+				width: "100%",
+			    background: "#fff",
+			    marginBottom: "20px",
+			    borderRadius: "5px",
+			    WebkitBoxShadow: "0px 2px 2px rgba(0, 0, 0, 0.1)",
+			    boxShadow: "0px 2px 2px rgba(0, 0, 0, 0.1)",
+			    position: "relative",
+			    padding: "30px 40px 30px 40px",
+			    marginTop: "20px"
+			},
+			version: {
+				textAlign: 'center',
+				margin: '-15px 0 40px'
+			}
 		};
-		const versionStyle = {
-			textAlign: 'center',
-			margin: '-15px 0 40px'
-		};
-
         return (
-        	<div className="wrapper" style={headerStyle}>
-			<div className="card">
-				<h1 className="logo">"SuperCell <SvgLogo /> Index Page"</h1> 
-				<p style={versionStyle}>version {version}</p>
-				<p>Hello, this is a <strong>{this.props.phrase}</strong></p>
-				<p><a href="/style-guide.html">Style Guide</a></p>
-
+        	<div className="container">
+				<div className="card" style={style.card}>
+					<h1 className="logo">"SuperCell <SvgLogo /> Index Page"</h1> 
+					<p style={style.version}>version {version}</p>
+					<p>Hello, this is a <strong>{this.props.phrase}</strong></p>
+				</div>
 			</div>
-		</div>
         );
     }
 }

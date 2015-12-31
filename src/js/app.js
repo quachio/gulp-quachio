@@ -14,13 +14,8 @@ import {es6Welcome} from './demoES6';
 es6Welcome(6);
 
 
-//es5
-var es5Welcome = require('./demoES5');
-es5Welcome(5);
-
-
 // https://github.com/ModuleLoader/es6-module-loader/wiki/Brief-Overview-of-ES6-Module-syntax
-console.log('javascript reporting in from index.js ...');
+console.log('javascript reporting in from app.js ...');
 
 
 
