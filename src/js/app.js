@@ -1,5 +1,4 @@
 "use strict";
-//react
 import React from 'react';
 import ReactDOM from 'react-dom';
 import ReactMessage from './components/Message';
