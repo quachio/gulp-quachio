@@ -1,3 +1,4 @@
+"use strict";
 // ES6 module export example
 export function es6Welcome(version) {
 
