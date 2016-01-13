@@ -11,6 +11,9 @@ SuperCell is my current build system for Node, Moble and ES6+ React apps.  This 
 
 Since this is used for my own projects I am currently not accepting public pull requests on this repo.  Other then that please feel free to use it however you like.
 
+## YouTube Demo
+[![alt tag](http://img.youtube.com/vi/bfuQAL1xkag/0.jpg)](https://www.youtube.com/watch?v=bfuQAL1xkag)
+
 ## Install Packages
 
 After cloning the project to your computer run the following command in your terminal to install all required node packages.
