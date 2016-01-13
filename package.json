@@ -7,6 +7,10 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Joel Longie",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/joellongie/superCell.git"
+  },
   "license": "ISC",
   "devDependencies": {
     "babel-preset-es2015": "^6.1.18",
