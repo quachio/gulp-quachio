@@ -19,7 +19,7 @@ Since this is used for my own projects I am currently not accepting public pull 
 After cloning the project to your computer run the following command in your terminal to install all required node packages.
 
 	sudo npm install
-	npm start  (will startup gulp command)	
+	npm start  (or use "gulp", both will run the gulp command)	
 		
 The first time you run gulp the build may take a little longer as it compiles and builds out the "public/css" and "public/js" folders and files.
 
