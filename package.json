@@ -1,10 +1,10 @@
 {
   "name": "superCell",
-  "version": "1.0.4",
+  "version": "1.0.6",
   "description": "Build system for node, express and react apps",
   "main": "gulpfile.js",
   "scripts": {
-    "start": "gulp"
+    "start": "NODE_ENV=production gulp"
   },
   "author": "Joel Longie",
   "repository": {
@@ -30,7 +30,7 @@
     "watchify": "^3.4.0"
   },
   "dependencies": {
-    "react": "^0.14.2",
-    "react-dom": "^0.14.2"
+    "react": "^15.0.1",
+    "react-dom": "^15.0.1"
   }
 }

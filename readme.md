@@ -19,9 +19,15 @@ Since this is used for my own projects I am currently not accepting public pull 
 After cloning the project to your computer run the following command in your terminal to install all required node packages.
 
 	sudo npm install
-	npm start  (or use "gulp", both will run the gulp command)	
+	npm start  (or use "gulp", both will run the gulp command)
 		
 The first time you run gulp the build may take a little longer as it compiles and builds out the "public/css" and "public/js" folders and files.
+
+## Important
+When using "npm start" you are running react in 'production mode'.  This removes many of React 15.0+ warnings.  When in development you can change this in the package.json start script.  Change "NODE_ENV=production gulp" to just "gulp".  This will put react back in develoment node with a warning in the console like the one below:
+
+> Note: by default, React 15.0+ will be in development mode. To use React in production mode, set the environment variable NODE_ENV to production (using envify or webpack's DefinePlugin). A minifier that performs dead-code elimination such as UglifyJS is recommended to completely remove the extra code present in development mode. [http://facebook.github.io/react/downloads.html](http://facebook.github.io/react/downloads.html)
+
 
 ## Features
 
