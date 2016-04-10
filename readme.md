@@ -7,7 +7,7 @@
   <img src="https://david-dm.org/joellongie/superCell/dev-status.svg" alt="dev deps status"/>
 </a>
 
-> CHANGELOG 1.0.6
+> CHANGELOG 1.0.6, April 10, 2016     
 > Updated 'react' and 'react-dom' packages to 15.0.1. Changed 'package.json' start script to start in production mode (see note below).  Font-Awesome support is depreciated and will be removed in future update.  Please use SVG sprites or superCellUI module import.  Notes on React 15.0.1 can be found at [https://facebook.github.io/react/blog/2016/04/08/react-v15.0.1.html](https://facebook.github.io/react/blog/2016/04/08/react-v15.0.1.html).
 
 
