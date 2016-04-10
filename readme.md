@@ -7,6 +7,10 @@
   <img src="https://david-dm.org/joellongie/superCell/dev-status.svg" alt="dev deps status"/>
 </a>
 
+> CHANGELOG 1.0.6
+> Updated 'react' and 'react-dom' packages to 15.0.1. Changed 'package.json' start script to start in production mode (see note below).  Font-Awesome support is depreciated and will be removed in future update.  Please use SVG sprites or superCellUI module import.  Notes on React 15.0.1 can be found at [https://facebook.github.io/react/blog/2016/04/08/react-v15.0.1.html](https://facebook.github.io/react/blog/2016/04/08/react-v15.0.1.html).
+
+
 SuperCell is my current build system for Node, Moble and ES6+ React apps.  This build system replaces jlGulp and renames the build to reflect that it is no longer tied to any particular technology but will adapt over time as new and better technologies emerge. 
 
 Since this is used for my own projects I am currently not accepting public pull requests on this repo.  Other then that please feel free to use it however you like.
