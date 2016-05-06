@@ -1,7 +1,7 @@
 'use strict';
 import React from 'react';
 import packageJSON from '../../../package.json';
-import {SuperCellLogo, HappyFace} from './icons';
+import {SuperCellIcon, HappyFaceIcon} from './Icons';
 
 class App extends React.Component {
     render() {
@@ -28,9 +28,9 @@ class App extends React.Component {
 
         <div className="row">
           <div className='card' style={style.card}>
-            <h1 className='logo'>"SuperCell <SuperCellLogo /> Index Page"</h1>
+            <h1 className='logo'>"SuperCell <SuperCellIcon /> Index Page"</h1>
             <p style={style.version}>version {version}</p>
-            <p>Hello, this is a <strong>{this.props.phrase}</strong>  <HappyFace /></p>
+            <p>Hello, this is a <strong>{this.props.phrase}</strong>  <HappyFaceIcon /></p>
           </div>
         </div>
 
@@ -43,6 +43,7 @@ class App extends React.Component {
             <p>Check out the <a href="/style-guide.html">Style Guide</a></p>
           </div>
         </div>
+
 			</div>
       );
     }
