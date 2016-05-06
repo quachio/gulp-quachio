@@ -28,7 +28,7 @@ class ReactMessage extends React.Component {
 				<div className='card' style={style.card}>
 					<h1 className='logo'>"SuperCell <SuperCellLogo /> Index Page"</h1>
 										<p style={style.version}>version {version}</p>
-					<p>Hello <HappyFace />, this is a <strong>{this.props.phrase}</strong></p>
+					<p>Hello, this is a <strong>{this.props.phrase}</strong>  <HappyFace /></p>
 				</div>
 			</div>
       );
