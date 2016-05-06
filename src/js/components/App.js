@@ -3,7 +3,7 @@ import React from 'react';
 import packageJSON from '../../../package.json';
 import {SuperCellLogo, HappyFace} from './icons';
 
-class ReactMessage extends React.Component {
+class App extends React.Component {
     render() {
       const version = packageJSON.version;
       const style = {
@@ -25,14 +25,27 @@ class ReactMessage extends React.Component {
       };
       return (
       <div className='container'>
-				<div className='card' style={style.card}>
-					<h1 className='logo'>"SuperCell <SuperCellLogo /> Index Page"</h1>
-										<p style={style.version}>version {version}</p>
-					<p>Hello, this is a <strong>{this.props.phrase}</strong>  <HappyFace /></p>
-				</div>
+
+        <div className="row">
+          <div className='card' style={style.card}>
+            <h1 className='logo'>"SuperCell <SuperCellLogo /> Index Page"</h1>
+            <p style={style.version}>version {version}</p>
+            <p>Hello, this is a <strong>{this.props.phrase}</strong>  <HappyFace /></p>
+          </div>
+        </div>
+
+        <div className="row">
+          <div className='card' style={style.card}>
+            <p>I use <strong>flexbox</strong> for my layouts!
+            </p>
+          </div>
+          <div className='card' style={style.card}>
+            <p>Check out the <a href="/style-guide.html">Style Guide</a></p>
+          </div>
+        </div>
 			</div>
       );
     }
 }
 
-export default ReactMessage;
+export default App;

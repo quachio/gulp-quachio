@@ -11,7 +11,7 @@
 > Updated 'react' and 'react-dom' packages to 15.0.1. Changed 'package.json' start script to start in production mode (see note below).  Font-Awesome support is depreciated and will be removed in future update.  Please use SVG sprites or superCellUI module import.  Notes on React 15.0.1 can be found at [https://facebook.github.io/react/blog/2016/04/08/react-v15.0.1.html](https://facebook.github.io/react/blog/2016/04/08/react-v15.0.1.html).
 
 
-SuperCell is my current build system for Node, Moble and ES6+ React apps.  This build system replaces jlGulp and renames the build to reflect that it is no longer tied to any particular technology but will adapt over time as new and better technologies emerge. 
+SuperCell is my current build system for Node, Moble and ES6+ React apps.  This build system replaces jlGulp and renames the build to reflect that it is no longer tied to any particular technology but will adapt over time as new and better technologies emerge.
 
 Since this is used for my own projects I am currently not accepting public pull requests on this repo.  Other then that please feel free to use it however you like.
 
@@ -24,7 +24,7 @@ After cloning the project to your computer run the following command in your ter
 
 	sudo npm install
 	npm start  (or use "gulp", both will run the gulp command)
-		
+
 The first time you run gulp the build may take a little longer as it compiles and builds out the "public/css" and "public/js" folders and files.
 
 ## Important
@@ -52,9 +52,8 @@ Precompiled JS and SCSS files are in the src folder and compile to public.  All 
 
 
 ## To Do
-- Express, browser-sync integration.
-- Research webpack as alternative for Gulp to improve build speed and optimization.
-- add NODE_ENV environment variable to production for [better React performance](https://facebook.github.io/react/blog/2015/10/07/react-v0.14.html#installation). 
+- add conditional statements for NODE_ENV
+- add NODE_ENV environment variable to production for [better React performance](https://facebook.github.io/react/blog/2015/10/07/react-v0.14.html#installation).
 - Additional testing.
 
 ## How to remove React
@@ -64,15 +63,15 @@ If you would like to remove React from the build just follow the steps below.
 
 		sudo npm uninstall react react-dom --save-dev
 
-2. In gulpfile.js 
+2. In gulpfile.js
 
 	Remove lines:
- 
+
 		var react         = require('react');
 		var reactDOM      = require('react-dom');
 
-3. In file src/index.js: 
-	
+3. In file src/index.js:
+
 	Remove all React code.
 
 		import React from 'react';
