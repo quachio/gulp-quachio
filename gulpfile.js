@@ -13,6 +13,10 @@ var sass          = require('gulp-sass');
 var autoprefixer  = require('gulp-autoprefixer');
 var react         = require('react');
 var reactDOM      = require('react-dom');
+var gulpif        = require('gulp-if');
+
+// setup node enviorment (development or production)
+var env = process.env.NODE_ENV;
 
 // ////////////////////////////////////////////////
 // Javascript Browserify, Watchify, Babel, React
@@ -47,7 +51,7 @@ function bundle() {
 
     // optional, remove if you don't need to buffer file contents
     .pipe(buffer())
-    .pipe(uglify())
+    .pipe(gulpif(env === 'production', uglify()))
 
     // optional, remove if you dont want sourcemaps
     .pipe(sourcemaps.init({ loadMaps: true })) // loads map from browserify file

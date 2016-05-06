@@ -4,7 +4,8 @@
   "description": "Build system for node, express and react apps",
   "main": "gulpfile.js",
   "scripts": {
-    "start": "NODE_ENV=production gulp"
+    "start": "NODE_ENV=development gulp",
+    "production": "NODE_ENV=production gulp"
   },
   "author": "Joel Longie",
   "repository": {
@@ -20,6 +21,7 @@
     "browserify": "^13.0.0",
     "gulp": "^3.9.0",
     "gulp-autoprefixer": "^3.1.0",
+    "gulp-if": "^2.0.1",
     "gulp-sass": "^2.0.4",
     "gulp-sourcemaps": "^1.6.0",
     "gulp-uglify": "^1.4.2",
