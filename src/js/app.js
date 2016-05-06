@@ -8,7 +8,7 @@ ReactDOM.render(
     document.querySelector('#app')
 );
 
-// Es6
+// Es6 Module
 import {es6Welcome} from './demoES6';
 es6Welcome(6);
 
