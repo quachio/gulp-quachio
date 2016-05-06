@@ -72,15 +72,15 @@ If you would like to remove React from the build just follow the steps below.
 
 3. In file src/index.js:
 
-	Remove all React code.
+	Remove all React code from index.js.
 
-		import React from 'react';
-		import ReactDOM from 'react-dom';
-		import HelloWorld from './demoReact.jsx';
+    import React from 'react';
+    import ReactDOM from 'react-dom';
+    import App from './components/App';
 
-		ReactDOM.render(
-		    <HelloWorld phrase="ES6"/>,
-		    document.querySelector('#reactApp')
-		);
+    ReactDOM.render(
+        <App phrase='React Component!'/>,
+        document.querySelector('#app')
+    );
 
-6. In folder: src/ remove any react components.
+6. In folder: src/ remove components folder.
