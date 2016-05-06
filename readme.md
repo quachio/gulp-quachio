@@ -1,4 +1,4 @@
-# SuperCell 0.0.2
+# SuperCell 1.0.7
 
 <a href="https://david-dm.org/joellongie/superCell">
   <img src="https://david-dm.org/joellongie/superCell/status.svg" alt="deps status"/>
