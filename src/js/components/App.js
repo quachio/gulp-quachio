@@ -1,9 +1,9 @@
 'use strict';
-import React from 'react';
+import React, {Component} from 'react';
 import packageJSON from '../../../package.json';
 import {SuperCellIcon, HappyFaceIcon} from './Icons';
 
-class App extends React.Component {
+class App extends Component {
     render() {
       const version = packageJSON.version;
       const style = {
