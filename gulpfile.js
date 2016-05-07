@@ -56,9 +56,10 @@ function bundle() {
     // optional, remove if you dont want sourcemaps
     .pipe(sourcemaps.init({ loadMaps: true })) // loads map from browserify file
     // Add transformation tasks to the pipeline here.
-    .pipe(sourcemaps.write('../maps')) // writes .map file
+    // writes .map file
+    .pipe(gulpif(env === 'development', sourcemaps.write('../maps')))
     .pipe(gulp.dest('./public/js'))
-    .pipe(browserSync.reload({ stream:true }));
+    .pipe(browserSync.reload({ stream: true }));
 }
 
 // ////////////////////////////////////////////////
@@ -101,9 +102,9 @@ gulp.task('styles', function () {
         browsers: ['last 3 versions'],
         cascade: false,
       }))
-    .pipe(sourcemaps.write('../maps'))
+    .pipe(gulpif(env === 'development', sourcemaps.write('../maps')))
 .pipe(gulp.dest('public/css'))
-.pipe(browserSync.reload({ stream:true }));
+.pipe(browserSync.reload({ stream: true }));
 });
 
 // ////////////////////////////////////////////////
