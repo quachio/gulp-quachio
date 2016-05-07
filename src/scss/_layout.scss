@@ -6,18 +6,16 @@
 .container{
 	max-width: 90%;
 	margin: 0px auto;
-	//background: #cccbc9;
 }
 
 .row{
 	display: flex;
 	flex-wrap: wrap;
-	margin: 0 -10px -20px;
+	margin: 0 -10px 0px;
 }
 
 .row > *{
 	background: #F4F3F0;
 	flex: 1;
 	margin: 0 10px;
-	//padding: 10px 10px;
 }

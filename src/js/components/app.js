@@ -11,13 +11,12 @@ class App extends Component {
       card: {
         width: '100%',
         background: '#fff',
-        marginBottom: '20px',
         borderRadius: '5px',
         WebkitBoxShadow: '0px 2px 2px rgba(0, 0, 0, 0.1)',
         boxShadow: '0px 2px 2px rgba(0, 0, 0, 0.1)',
         position: 'relative',
         padding: '30px 40px 30px 40px',
-        marginTop: '20px',
+        margin: '10px',
       },
       version: {
         textAlign: 'center',
@@ -48,6 +47,7 @@ class App extends Component {
         <div className='card' style={style.card}>
           <StatelessComponent />
         </div>
+        
       </div>
 
     </div>
