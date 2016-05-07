@@ -2,6 +2,7 @@
 import React, {Component} from 'react';
 import packageJSON from '../../../package.json';
 import {SuperCellIcon, HappyFaceIcon} from './Icons';
+import StatelessComponent from './StatelessComponentExample';
 
 class App extends Component {
     render() {
@@ -40,8 +41,13 @@ class App extends Component {
             </p>
           </div>
           <div className='card' style={style.card}>
-            <p>Check out the <a href="/style-guide.html">Style Guide</a></p>
+            <p>Check out the <strong><a href="/style-guide.html">Style Guide</a></strong></p>
           </div>
+
+          <div className='card' style={style.card}>
+            <StatelessComponent />
+          </div>
+
         </div>
 
 			</div>
