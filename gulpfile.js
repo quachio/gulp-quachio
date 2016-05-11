@@ -80,7 +80,7 @@ gulp.task('browserSync', function () {
 
 gulp.task('html', function () {
   return gulp.src('public/**/*.html')
-    .pipe(browserSync.reload({ stream:true }));
+    .pipe(browserSync.reload({ stream: true }));
 });
 
 // ////////////////////////////////////////////////
@@ -90,9 +90,10 @@ gulp.task('html', function () {
 gulp.task('styles', function () {
   gulp.src('src/scss/style.scss')
     .pipe(sourcemaps.init())
-      .pipe(sass({ outputStyle: 'compressed' }))
 
-      // .on('error', errorlog)
+      // scss output compressed if production or expanded if development
+      .pipe(gulpif(env === 'production', sass({ outputStyle: 'compressed' }),
+        sass({ outputStyle: 'expanded' })))
       .on('error', gutil.log.bind(gutil, gutil.colors.red(
          '\n\n*********************************** \n' +
         'SASS ERROR:' +
