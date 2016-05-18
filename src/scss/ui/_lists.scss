@@ -2,6 +2,10 @@
 // LISTS
 // ***********************************
 
-ul li{
-	list-style: inside;		
+ul {
+  // padding-left: 0;
+
+  li{
+  	list-style: inside;
+  }
 }

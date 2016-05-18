@@ -1,4 +1,4 @@
-# SuperCell 1.0.7
+# SuperCell 1.0.8
 
 <a href="https://david-dm.org/joellongie/superCell">
   <img src="https://david-dm.org/joellongie/superCell/status.svg" alt="deps status"/>
@@ -6,6 +6,10 @@
 <a href="https://david-dm.org/joellongie/superCell#info=devDependencies">
   <img src="https://david-dm.org/joellongie/superCell/dev-status.svg" alt="dev deps status"/>
 </a>
+
+
+> CHANGELOG 1.0.8, May 18, 2016     
+> Added react-router. Reorganized components to reflect react-router structure.  Added a react-styled style-guide.
 
 > CHANGELOG 1.0.7, May 6, 2016     
 > Removed Font-Awesome.  "npm start" now starts app in 'development' mode, "npm run production" runs app in production mode with minified js files.  Notes on React 15.0.1 can be found at [https://facebook.github.io/react/blog/2016/04/08/react-v15.0.1.html](https://facebook.github.io/react/blog/2016/04/08/react-v15.0.1.html).

@@ -1,11 +1,13 @@
 'use strict';
 import React, { Component } from 'react';
+import packageJSON from '../../../package.json';
 import { SuperCellIcon, HappyFaceIcon } from './icons';
 import StatelessComponent from './statelessComponentExample';
 import { Link } from 'react-router';
 
-class App extends Component {
+class AppIndex extends Component {
   render() {
+    const version = packageJSON.version;
     const style = {
       card: {
         width: '100%',
@@ -19,13 +21,13 @@ class App extends Component {
       },
     };
     return (
-    <div className='app-index'>
+    <section className='container'>
 
       <div className="row">
         <div className='card' style={style.card}>
-          <h1 className='logo'>"App  Index Page"</h1>
+          <h1 className='logo'>SuperCell <SuperCellIcon /> version {version}</h1>
         <p>Hello, this is a <strong>ES6 React Class Component! </strong>
-        <HappyFaceIcon /><SuperCellIcon /></p>
+        <HappyFaceIcon /></p>
         </div>
       </div>
 
@@ -33,19 +35,24 @@ class App extends Component {
         <div className='card' style={style.card}>
           <p>I use <strong>flexbox</strong> for my layouts!
           </p>
+          <p>Check out the <Link to={'/style-guide'}><strong>StyleGuide</strong></Link></p>
         </div>
+
         <div className='card' style={style.card}>
-          <p>Check out the <strong><a href="/style-guide.html">Style Guide</a></strong></p>
-        <p><Link to={'/style-guide'}>React StyleGuide</Link></p>
+          <p>Links that don't match up with a URL defined in the router
+          will be handled by the noMatch component.<br />
+          <Link to={'/some-random-link'}><strong>Example not found link</strong></Link></p>
         </div>
+
         <div className='card' style={style.card}>
           <StatelessComponent phrase='React Stateless Component' />
+          <SuperCellIcon />
         </div>
       </div>
 
-    </div>
+    </section>
     );
   }
 }
 
-export default App;
+export default AppIndex;
