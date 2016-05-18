@@ -4,7 +4,7 @@ import { Link } from 'react-router';
 
 const NoMatch = (props) => (
   <section className='container'>
-    <p>Nothing found</p>
+    <p>Oops! Nothing found here.</p>
     <p><Link to={'/'}><strong>Home</strong></Link></p>
   </section>
 );
