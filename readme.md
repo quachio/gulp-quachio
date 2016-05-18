@@ -9,7 +9,7 @@
 
 
 > CHANGELOG 1.0.8, May 18, 2016     
-> Added react-router. Reorganized components to reflect react-router structure.  Added a react-styled style-guide.
+> Added react-router, hashHistory on by default, can change to browserHistory. Reorganized components to reflect react-router structure.  Added a react-styled style-guide.
 
 > CHANGELOG 1.0.7, May 6, 2016     
 > Removed Font-Awesome.  "npm start" now starts app in 'development' mode, "npm run production" runs app in production mode with minified js files.  Notes on React 15.0.1 can be found at [https://facebook.github.io/react/blog/2016/04/08/react-v15.0.1.html](https://facebook.github.io/react/blog/2016/04/08/react-v15.0.1.html).
@@ -76,26 +76,14 @@ If you would like to remove React from the build just follow the steps below.
 
 1. In terminal remove react packages.
 
-		sudo npm uninstall react react-dom --save-dev
+		sudo npm uninstall react react-dom react-router --save-dev
 
 2. In gulpfile.js
 
 	Remove lines:
 
 		var react         = require('react');
-		var reactDOM      = require('react-dom');
 
-3. In file src/index.js:
+3. In file src/index.js remove all code.
 
-	Remove all React code from index.js.
-
-        import React from 'react';
-        import ReactDOM from 'react-dom';
-        import App from './components/App';
-
-        ReactDOM.render(
-            <App phrase='React Component!'/>,
-            document.querySelector('#app')
-        );
-
-6. In folder: src/ remove components folder.
+4. In folder: src/ remove components folder and 'routes.js'.

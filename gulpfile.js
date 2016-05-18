@@ -12,7 +12,6 @@ var browserSync   = require('browser-sync');
 var sass          = require('gulp-sass');
 var autoprefixer  = require('gulp-autoprefixer');
 var react         = require('react');
-var reactDOM      = require('react-dom');
 var gulpif        = require('gulp-if');
 
 // setup node enviorment (development or production)
