@@ -34,8 +34,8 @@ class StyleGuide extends Component {
         <div className='card' style={style.card}>
           <h1>SuperCell <SuperCellIcon /> React Style Guide</h1>
         <p style={style.center}><Link to={'/'}><strong>Home</strong></Link></p>
-          <p>This page is a basic style guide for your app. <strong>By default most styles are turned off.</strong> Styles can be turned on in the "src/scss/style.scss" file by uncommenting the sections you would like to add to your app. Only use the ones that you need to keep your files as small as possible.</p>
-        <p>All CSS assumes a mobile-first approach. Media queries are handeled as mixins. See "src/scss/_base.scss" for example on how to use them.  This file has been motified to work with React, see '/public/style-guide.html' for pure HTML5</p>
+      <p>This page is a basic style guide for your React based app. <strong>By default most styles are turned off.</strong> Styles can be turned on in the "src/scss/style.scss" file by uncommenting the sections you would like to add to your app. Only use the ones that you need to keep your files as small as possible.</p>
+        <p>All CSS assumes a mobile-first approach. Media queries are handeled as mixins. See "src/scss/_base.scss" for example on how to use them.</p>
         </div>
       </div>
 
