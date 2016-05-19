@@ -84,6 +84,5 @@ If you would like to remove React from the build just follow the steps below.
 
 		var react = require('react');
 
-3. In file 'src/index.js' remove all code.  Add your new code to this file.
-
-4. In folder: 'src/' remove components folder and 'routes.js'.
+3. In folder: 'src/' remove components folder and 'routes.js'.
+4. In file 'src/index.js' remove all code.  Add your new code to this file.
