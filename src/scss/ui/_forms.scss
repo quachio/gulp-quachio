@@ -9,6 +9,9 @@ textarea {
     vertical-align: baseline; /* Improves appearance and consistency in all browsers */
 }
 
+input[type="search"] {
+  width: calc(100% - 16px) !important
+}
 
 input[type="text"],input[type="password"],input[type="date"],input[type="email"],input[type="search"],input[type="url"],select,textarea {
     width: 100%;
@@ -47,7 +50,7 @@ input, textarea {
     line-height: 1;
     margin: 2px 6px 12px 0;
     padding: 8px;
-    
+
 }
 
 select {
@@ -62,7 +65,7 @@ select {
 input[type="color"]{
 	border: none;
 	background: none;
-	padding: 0;	
+	padding: 0;
 }
 
 
