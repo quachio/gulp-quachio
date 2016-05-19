@@ -18,7 +18,6 @@ class AppIndex extends Component {
         position: 'relative',
         padding: '30px 40px 30px 40px',
         margin: '10px',
-        overflow: 'hidden',
       },
     };
     return (
