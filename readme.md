@@ -76,7 +76,7 @@ If you would like to remove React from the build just follow the steps below.
 
 1. In terminal remove react packages.
 
-		npm uninstall react react-dom react-router --save-dev
+		npm uninstall react react-dom react-router --save
 
 2. In gulpfile.js
 
