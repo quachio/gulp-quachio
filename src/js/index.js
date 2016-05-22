@@ -10,10 +10,10 @@ import ReactDOM from 'react-dom';
 // https://gist.github.com/joellongie/e6f4a3b5fa98c521782619e487aca15a
 // ////////////////////////////////////////////////
 
-import { Router, browserHistory } from 'react-router';
+import { Router, hashHistory } from 'react-router';
 import routes from './routes';
 
 ReactDOM.render(
-  <Router history={ browserHistory } routes={routes} />,
+  <Router history={ hashHistory } routes={routes} />,
   document.querySelector('#app')
 );
