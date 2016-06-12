@@ -9,20 +9,19 @@
   }
 }
 
-
 // Effects
-@mixin transition-all($time:.5s){
-	-webkit-transition: all $time ease-in-out;
-	-moz-transition: all $time ease-in-out;
-	-ms-transition: all $time ease-in-out;
-	-o-transition: all $time ease-in-out;
-	transition: all $time ease-in-out;
+@mixin transition-all($time: .5s) {
+  -moz-transition:    $time ease-in-out;
+  -ms-transition:     $time ease-in-out;
+  -o-transition:      $time ease-in-out;
+  -webkit-transition: $time ease-in-out;
+  transition:         $time ease-in-out;
 }
 
-@mixin fade($time:0.3s){
-	-webkit-transition: background-color $time ease-in-out;
-	-moz-transition: background-color $time ease-in-out;
-	-o-transition: background-color $time ease-in-out;
-	-ms-transition: background-color $time ease-in-out;
-	transition: background-color $time ease-in-out;
+@mixin fade($time: .3s) {
+  -moz-transition:    background-color $time ease-in-out;
+  -ms-transition:     background-color $time ease-in-out;
+  -o-transition:      background-color $time ease-in-out;
+  -webkit-transition: background-color $time ease-in-out;
+  transition:         background-color $time ease-in-out;
 }

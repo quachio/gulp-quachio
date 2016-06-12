@@ -1,21 +1,20 @@
 // ***********************************
 // LAYOUT
 // ***********************************
-
 // Flex Grid Rows
-.container{
-	max-width: 90%;
-	margin: 0px auto;
+.container {
+	 margin: 0 auto;
+	 max-width: 90%;
 }
 
-.row{
-	display: flex;
-	flex-wrap: wrap;
-	margin: 0 -10px 0px;
+.row {
+	 display: flex;
+	 flex-wrap: wrap;
+	 margin: 0 -10px;
 }
 
-.row > *{
-	background: #F4F3F0;
-	flex: 1;
-	margin: 0 10px;
+.row > * {
+	 background: $color4;
+	 flex: 1;
+	 margin: 0 10px;
 }

@@ -6,27 +6,34 @@ html {
   overflow-y: scroll;
 }
 
-*, *:before, *:after {
+* {
   box-sizing: inherit;
 }
 
+* :before {
+  box-sizing: inherit;
+}
+
+* :after {
+  box-sizing: inherit;
+}
 
 body {
-  color: $body-text;
-	margin: 0;
-	padding: 0;
-	background: #333;
-	font-weight: $font-weight-body;
-	font-family: $font-family-primary;
+  // media query mixin, see _mixins.scss
+  @include desktop {
+    background: $grey-light;
+  }
 
-    // media query mixin, see _mixins.scss
-    @include desktop {
-        background: $grey-light;
-    }
+  background: $color4;
+  color: $body-text;
+  font-family: $font-family-primary;
+  font-weight: $font-weight-body;
+  margin: 0;
+  padding: 0;
 }
 
 hr {
-  border: solid #dddddd;
+  border: solid $color3;
   border-width: 1px 0 0;
   clear: both;
   height: 0;
