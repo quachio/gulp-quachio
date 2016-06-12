@@ -3,17 +3,16 @@
 // ***********************************
 html {
   box-sizing: border-box;
+  overflow-y: scroll;
 }
+
 *, *:before, *:after {
   box-sizing: inherit;
 }
 
-html {
-    overflow-y: scroll;
-}
 
-body{
-	color: $body-text;
+body {
+  color: $body-text;
 	margin: 0;
 	padding: 0;
 	background: #333;
@@ -27,9 +26,9 @@ body{
 }
 
 hr {
-    border: solid #DDDDDD;
-    border-width: 1px 0 0;
-    clear: both;
-    height: 0;
-    margin: 40px 0;
+  border: solid #dddddd;
+  border-width: 1px 0 0;
+  clear: both;
+  height: 0;
+  margin: 40px 0;
 }

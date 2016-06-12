@@ -2,42 +2,54 @@
 // IMPORTS
 // Import susy, breakpoint, resets and grids
 // ***********************************
-@import "ui/reset";
+@import 'ui/reset';
 
-
-
-// ***********************************
+// *************************************
 // HELPERS
-// ***********************************
-@import "variables";
-@import "mixins";
-
-
+// *************************************
+@import 'variables';
+@import 'mixins';
 
 // // ***********************************
 // // BASE STYLES
 // // ***********************************
-@import "base";
-@import "layout";
-@import "typography"; // typography and links
-@import "media";
+@import 'base';
+@import 'layout';
+@import 'typography'; // typography and links
+@import 'media';
 
-
+// // ***********************************
+// // Colors
+// // ***********************************
+// @import 'colors/ambers';
+// @import 'colors/blues';
+// @import 'colors/bootstrap';
+// @import 'colors/browns';
+// @import 'colors/grays';
+// @import 'colors/greens';
+// @import 'colors/limes';
+// @import 'colors/oranges';
+// @import 'colors/peaches';
+// @import 'colors/pinks';
+// @import 'colors/preboot';
+// @import 'colors/purples';
+// @import 'colors/reds';
+// @import 'colors/tans';
+// @import 'colors/turquoise';
+// @import 'colors/yellows';
+// @import 'colors/whites';
 
 // ***********************************
 // UI ELEMENTS
 // ***********************************
-@import "ui/lists";
-// @import "ui/buttons";
-// @import "ui/tables";
-// @import "ui/forms";
-// @import "ui/code";
-// @import "ui/panels";
-
-
-
+@import 'ui/lists';
+// @import 'ui/buttons';
+// @import 'ui/tables';
+// @import 'ui/forms';
+// @import 'ui/code';
+// @import 'ui/panels';
 
 // ***********************************
 // Navigation
 // ***********************************
-// @import "navigation";
+// @import 'navigation';
