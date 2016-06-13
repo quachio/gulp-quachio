@@ -26,8 +26,7 @@ class AppIndex extends Component {
       <div className="row">
         <div className='card' style={style.card}>
           <h1 className='logo'>SuperCell <SuperCellIcon /> version {version}</h1>
-        <p>Hello, this is a <strong>ES6 React Class Component! </strong>
-        <HappyFaceIcon /></p>
+          <p>Hello, this is a <strong>ES6 React Class Component!</strong><HappyFaceIcon /></p>
         </div>
       </div>
 

@@ -2,6 +2,10 @@
 // LINKS
 // ***********************************
 a {
+  @include transition-all(.5s);
+  color: $link-color;
+  text-decoration: none;
+
   &:visited {
     @include transition-all(.5s);
     color: $link-color;
