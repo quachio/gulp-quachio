@@ -1,4 +1,4 @@
-# SuperCell 1.0.8
+# HTML-Cell 1.0.0
 
 <a href="https://david-dm.org/joellongie/superCell">
   <img src="https://david-dm.org/joellongie/superCell/status.svg" alt="deps status"/>
