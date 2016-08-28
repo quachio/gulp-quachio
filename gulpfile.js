@@ -69,7 +69,7 @@ gulp.task('browserSync', function () {
   browserSync({
     server: {
       baseDir: './public/',
-      browser: ["google chrome", "safari"],
+      browser: ["google chrome", "safari"]
     },
   });
 });
