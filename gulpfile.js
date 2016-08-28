@@ -71,6 +71,7 @@ gulp.task('browserSync', function () {
       baseDir: './public/',
       browser: ["google chrome", "safari"]
     },
+    browser: ["google chrome", "safari"]
   });
 });
 
