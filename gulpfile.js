@@ -11,7 +11,6 @@ var assign        = require('lodash.assign');
 var browserSync   = require('browser-sync');
 var sass          = require('gulp-sass');
 var autoprefixer  = require('gulp-autoprefixer');
-var react         = require('react');
 var gulpif        = require('gulp-if');
 
 // setup node enviorment (development or production)
