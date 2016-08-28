@@ -1,26 +1,5 @@
-# SuperCell 1.0.8
+# GULP QUACHIO DOJO BUILD SYSTEM
 
-<a href="https://david-dm.org/joellongie/superCell">
-  <img src="https://david-dm.org/joellongie/superCell/status.svg" alt="deps status"/>
-</a>&nbsp;
-<a href="https://david-dm.org/joellongie/superCell#info=devDependencies">
-  <img src="https://david-dm.org/joellongie/superCell/dev-status.svg" alt="dev deps status"/>
-</a>
-
-
-> CHANGELOG 1.0.8, May 18, 2016     
-> Added react-router, hashHistory on by default, can change to browserHistory. Reorganized components to reflect react-router structure.  Added a react-styled style-guide.
-
-> CHANGELOG 1.0.7, May 6, 2016     
-> Removed Font-Awesome.  "npm start" now starts app in 'development' mode, "npm run production" runs app in production mode with minified js files.  Notes on React 15.0.1 can be found at [https://facebook.github.io/react/blog/2016/04/08/react-v15.0.1.html](https://facebook.github.io/react/blog/2016/04/08/react-v15.0.1.html).
-
-
-SuperCell is my current build system for Node, Moble and ES6+ React apps.  This build system replaces jlGulp and renames the build to reflect that it is no longer tied to any particular technology but will adapt over time as new and better technologies emerge.
-
-Since this is used for my own projects I am currently not accepting public pull requests on this repo.  Other then that please feel free to use it however you like.
-
-## YouTube Demo
-[![SuperCell YouTube Demo](http://img.youtube.com/vi/BwzjYK1Hd0Y/0.jpg)](https://www.youtube.com/watch?v=BwzjYK1Hd0Y)
 
 ## Install Packages
 
