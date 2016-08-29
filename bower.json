@@ -1,0 +1,17 @@
+{
+  "name": "gulp-quachio-dojo",
+  "description": "Build system for node, express and react apps",
+  "main": "gulpfile.js",
+  "authors": [
+    "Hung Quach"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/quachio/gulp-quachio",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

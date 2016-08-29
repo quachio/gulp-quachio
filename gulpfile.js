@@ -13,6 +13,8 @@ var sass          = require('gulp-sass');
 var autoprefixer  = require('gulp-autoprefixer');
 var react         = require('react');
 var gulpif        = require('gulp-if');
+var autoClose     = require('browser-sync-close-hook');
+
 
 // setup node enviorment (development or production)
 var env = process.env.NODE_ENV;
@@ -66,6 +68,12 @@ function bundle() {
 // ////////////////////////////////////////////////
 
 gulp.task('browserSync', function () {
+  browserSync.use({
+      plugin() {},
+      hooks: {
+          'client:js': autoClose,
+      },
+  });
   browserSync({
     server: {
       baseDir: './public/',
@@ -89,24 +97,28 @@ gulp.task('html', function () {
 // ///////////////////////////////////////////////
 
 gulp.task('styles', function () {
-  gulp.src('src/scss/style.scss')
-    .pipe(sourcemaps.init())
-
-      // scss output compressed if production or expanded if development
-      .pipe(gulpif(env === 'production', sass({ outputStyle: 'compressed' }),
-        sass({ outputStyle: 'expanded' })))
-      .on('error', gutil.log.bind(gutil, gutil.colors.red(
-         '\n\n*********************************** \n' +
-        'SASS ERROR:' +
-        '\n*********************************** \n\n'
-        )))
-      .pipe(autoprefixer({
-        browsers: ['last 3 versions'],
-        cascade: false,
-      }))
-    .pipe(gulpif(env === 'development', sourcemaps.write('../maps')))
-.pipe(gulp.dest('public/css'))
-.pipe(browserSync.reload({ stream: true }));
+  gulp.src('public/css/**/*.css')
+      .pipe(browserSync.reload({
+          stream: true
+      }));
+//   gulp.src('src/scss/style.scss')
+//     .pipe(sourcemaps.init())
+//
+//       // scss output compressed if production or expanded if development
+//       .pipe(gulpif(env === 'production', sass({ outputStyle: 'compressed' }),
+//         sass({ outputStyle: 'expanded' })))
+//       .on('error', gutil.log.bind(gutil, gutil.colors.red(
+//          '\n\n*********************************** \n' +
+//         'SASS ERROR:' +
+//         '\n*********************************** \n\n'
+//         )))
+//       .pipe(autoprefixer({
+//         browsers: ['last 3 versions'],
+//         cascade: false,
+//       }))
+//     .pipe(gulpif(env === 'development', sourcemaps.write('../maps')))
+// .pipe(gulp.dest('public/css'))
+// .pipe(browserSync.reload({ stream: true }));
 });
 
 // ////////////////////////////////////////////////
@@ -115,7 +127,9 @@ gulp.task('styles', function () {
 
 gulp.task('watch', function () {
   gulp.watch('public/**/*.html', ['html']);
-  gulp.watch('src/scss/**/*.scss', ['styles']);
+  // gulp.watch('src/scss/**/*.scss', ['styles']);
+  gulp.watch('public/css/**/*.css', ['styles']);
+
 });
 
 gulp.task('default', ['js', 'styles', 'browserSync', 'watch']);
